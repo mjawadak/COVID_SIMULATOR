@@ -17,9 +17,11 @@ The spatial model parameters can be configured in the config.json file
 
 The config.json file contains the parameters for the simulation.
 
-Dependencies:
+## Dependencies:
 
-Numpy, Pandas
+Numpy
+
+Pandas
 
 
 ## To run the simulations: 
