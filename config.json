@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "NUM_SCHOOLS":3000,
+    "NUM_RESIDENCES":3560000,
+    "NUM_RETAILS":43000,
+    "NUM_WORKPLACES":1100000,
+    "POPULATION":8910000,
+    "SCALE_FACTOR":1000,
+    "INTERVENTION_INFO": {
+      "flag": true,
+      "locked_entities":["school","employment","retail"],
+      "threshold_infected":1000
+    }
+  }
+}
