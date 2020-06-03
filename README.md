@@ -23,6 +23,8 @@ Numpy
 
 Pandas
 
+Scikit-Learn
+
 
 ## To run the simulations: 
 
