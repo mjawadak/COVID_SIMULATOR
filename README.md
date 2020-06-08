@@ -17,27 +17,9 @@ The spatial model parameters can be configured in the config.json file
 
 The config.json file contains the parameters for the simulation.
 
-Example file:
+The parameter SCALE_FACTOR is simply used to scale down the number of entites. For example, NUM_SCHOOLS = NUM_SCHOOLS/SCALE_FACTOR.
 
-{
-  "parameters": {
-    "NUM_SCHOOLS":3000,
-    "NUM_RESIDENCES":3560000,
-    "NUM_RETAILS":43000,
-    "NUM_WORKPLACES":1100000,
-    "POPULATION":8910000,
-    "SCALE_FACTOR":1000,
-    "INTERVENTION_INFO": {
-      "flag": true,
-      "locked_entities":["school","employment","retail"],
-      "threshold_infected":1000
-    }
-  }
-}
-
-The parameter SCALE_FACTOR is simply used to scale down the number of entites. For example, the actual the NUM_SCHOOLS = NUM_SCHOOLS/SCALE_FACTOR.
-
-INTERVENTION_INFO provides the information about the entites to be locked down. The parameter "flag" is used to enforce the lockdown or not. If true, the framework will implement a lockdown once the active cases exceeds the value given by "threshold_infected" and the entities to be locked is provided by "locked_entities".
+INTERVENTION_INFO provides the information about the entites to be locked down. The "flag" parameter is used to decide whether to enforce the lockdown or not. If true, the framework will implement a lockdown once the number of active cases exceeds the value given by "threshold_infected" and the entities to be locked is provided by "locked_entities".
 
 
 ## Dependencies:
